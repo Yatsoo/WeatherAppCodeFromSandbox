@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+  
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SheCodes+ homework week 2</title>
+    
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+          rel="stylesheet"
+        />
+    
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous"
+        />
+    
+        <link href="src/styles.css" rel="stylesheet" />
+        <script src="src/index.js"></script> 
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      </head>
+    
+      <body>
+        <div class="container">
+          <div class="currentdayweather">
+            <div class="card-deck">
+              <div class="card text-left" style="max-width: 18rem">
+                <div class="card-header">
+                  <h1>Dublin <img src="https://img.icons8.com/nolan/64/rain.png"
+                        class="card-img"
+                        alt="rain falling from cloud"
+                      /></h1>
+                   
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h3>Friday</h3>
+                      <p id="month-date">Sept. 20 | 00.13</p>
+                      <p>Rainy</p>
+                    </div>
+                    <div class="col">
+                      <h3><span id="temperature"></span></h3>
+                      <p><a href="#" id="celsius"> C </a>| <a href="#" id="fahrenheit">F</a></p>
+
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+    
+            <div class="card text-right searchbar">
+              <div class="card-body">
+                 <form class="form-inline">
+            
+            <div class="form-group mx-sm-3 mb-2">
+          
+              <input type="text" class="form-control" id="searched-city" placeholder="Enter a City">
+            </div>
+            <span class="searchbutton"><button type="submit" class="btn btn-primary mb-2" value="Search">Search</button></span>
+            <span class="currentbutton" id="current"><button type="submit" class="btn btn-primary mb-2" value="Current City">Current</button></span>
+          </form>
+    
+              </div>
+              <div class="card-body">
+                <div class="extrainfo text-left">
+                       
+                  <ul>
+                    <li>Humidity: 39% </li>
+                    <li>Precipitation: 93%</li>
+                     <li>Wind: 7 km/h</li> 
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <hr>
+    
+          <div class="weeklytemperature">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="card text-center">
+                  <div class="card-header">Saturday</div>
+                  <img
+                    src="https://img.icons8.com/nolan/64/smiling-sun.png"
+                    class="card-img-top"
+                    alt="sun shining"
+                  />
+                  <div class="card-footer">23°C</div>
+                </div>
+              </div>
+    
+              <div class="col d-flex justify-content-center">
+                <div class="card text-center">
+                  <div class="card-header">Sunday</div>
+                  <img
+                    src="https://img.icons8.com/nolan/64/partly-cloudy-day.png"
+                    class="card-img-top"
+                    alt="cloud sun"
+                  />
+                  <div class="card-footer">19°C</div>
+                </div>
+              </div>
+    
+              <div class="col d-flex justify-content-center">
+                <div class="card text-center">
+                  <div class="card-header">Monday</div>
+                  <img
+                    src="https://img.icons8.com/nolan/64/clouds.png"
+                    class="card-img-top"
+                    alt="clouds"
+                  />
+                  <div class="card-footer">21°C</div>
+                </div>
+              </div>
+    
+              <div class="col d-flex justify-content-center">
+                <div class="card text-center">
+                  <div class="card-header">Tuesday</div>
+                  <img
+                    src="https://img.icons8.com/nolan/64/partly-cloudy-day.png"
+                    class="card-img-top"
+                    alt="partly cloudy"
+                  />
+                  <div class="card-footer">17°C</div>
+                </div>
+              </div>
+    
+              <div class="col d-flex justify-content-center">
+                <div class="card text-center">
+                  <div class="card-header">Wednesday</div>
+                  <img
+                    src="https://img.icons8.com/nolan/64/rain.png"
+                    class="card-img-top"
+                    alt="rainy"
+                  />
+                  <div class="card-footer">21°C</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
